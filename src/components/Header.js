@@ -1,8 +1,6 @@
 import { Link  } from "react-router-dom";
 import logoImage from '../assets/logo.png';
-import Home from "./Home";
-import Reservation from "./Reservation";
-import UnderConstructions from "./UnderConstruction";
+
 
 const Header = () => {
   return (
