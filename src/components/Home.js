@@ -1,6 +1,8 @@
+import TestimonialCard from "./TestimonialCard";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
+
 import restaurantFoodImage from "../assets/restaurant-food.jpg";
 import bruschettaImage from "../assets/bruschetta.jpg";
 import greekSaladImage from "../assets/greek-salad.jpg";
@@ -10,6 +12,39 @@ import customer2Image from "../assets/customer2.jpg";
 import customer3Image from "../assets/customer3.jpg";
 import customer4Image from "../assets/customer4.jpg";
 import "../assets/Home.css";
+
+
+const customers = [
+  {
+    fullName: 'Maria Sanchez',
+    image: customer1Image,
+    rating: [1, 1, 1, 1, 0.5],
+    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  },
+  {
+    fullName: 'Antony Clifton',
+    image: customer2Image,
+    rating: [1, 1, 1, 1, 1],
+    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  },
+  {
+    fullName: 'Tamika Jackson',
+    image: customer3Image,
+    rating: [1, 1, 1, 1, 0.5],
+    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  },
+  {
+    fullName: 'Brandon Ming',
+    image: customer4Image,
+    rating: [1, 1, 1, 1],
+    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  },
+];
+
 
 const Home = () => {
   return (
@@ -101,6 +136,16 @@ const Home = () => {
             </Link>
           </div>
         </article>
+      </section>
+
+      <section className="testimonials">
+        <div className="container grid">
+          <h2>What people say about us!</h2>
+          {customers.map((customer, index) => 
+          <TestimonialCard key={index} customer={customer} />
+        )}
+          
+        </div>
       </section>
     </>
   );
