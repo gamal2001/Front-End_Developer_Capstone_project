@@ -1,8 +1,8 @@
 {
   "homepage": "https://gamal2001.github.io/Front-End_Developer_Capstone_project",
-  "name": "meta-front-end-developer-capstone",
+  "name": "Front-End_Developer_Capstone_project",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
