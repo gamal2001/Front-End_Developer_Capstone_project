@@ -1,7 +1,7 @@
 .bookings h2 {
   padding: 1.875rem 0 1.875rem 0;
-  background-color: #495e57;
-  color: #ffffff;
+  background-color: #495E57;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -23,9 +23,9 @@
 
 .bookings button:disabled,
 .bookings button[disabled] {
-  background-color: #edefee;
-  border-color: #edefee;
-  color: #adafae;
+  background-color: #EDEFEE;
+  border-color: #EDEFEE;
+  color: #ADAFAE;
   cursor: not-allowed;
 }
 

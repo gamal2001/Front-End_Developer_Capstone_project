@@ -1,9 +1,8 @@
-
 import { useReducer } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../assets/Reservation.css';
-import { fetchAPI, submitAPI } from '../utils/fakeAPI';
-import pages from '../utils/pages';
+import './index.css';
+import { fetchAPI, submitAPI } from '../../../utils/fakeAPI';
+import pages from '../../../utils/pages';
 import BookingForm from './BookingForm';
 
 const updateTimes = (availableTimes, date) => {
@@ -14,7 +13,7 @@ const updateTimes = (availableTimes, date) => {
 const initializeTimes = initialAvailableTimes => 
   [...initialAvailableTimes, ...fetchAPI(new Date())];
 
-const Reservation = () => {
+const Bookings = () => {
   const [
     availableTimes, 
     dispatchOnDateChange
@@ -38,4 +37,4 @@ const Reservation = () => {
   );
 };
 
-export default Reservation;
+export default Bookings;

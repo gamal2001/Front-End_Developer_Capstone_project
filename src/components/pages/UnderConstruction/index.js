@@ -1,6 +1,6 @@
 import { faPersonDigging } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../assets/UnderConstruction.css'
+import './index.css';
 
 const UnderConstruction = () => {
   return (

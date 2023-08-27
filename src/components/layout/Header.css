@@ -18,12 +18,12 @@
   grid-column: 2;
   display: none;
   cursor: pointer;
-  color: #495e57;
+  color: #495E57;
   transition: background-color 0.5s;
 }
 
 .nav-bar-hamburger:hover {
-  background-color: #f4ce14;
+  background-color: #F4CE14;
 }
 
 .nav-bar-links {
@@ -56,10 +56,10 @@
   transition: background-color 0.5s;
 }
 
-.current-location,
-.nav-bar-links a:hover,
+.current-location, 
+.nav-bar-links a:hover, 
 .nav-bar-links a:focus {
-  background-color: #f4ce14;
+  background-color: #F4CE14;
 }
 
 @media only screen and (max-width: 992px) {
@@ -82,7 +82,7 @@
     height: 100vh;
     top: 0;
     left: -50%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
   }
